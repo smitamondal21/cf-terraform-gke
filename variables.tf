@@ -5,7 +5,7 @@ variable "region" {
 
 variable "project_id" {
   type    = string
-  default = "doc-20200910120159"
+  default = "teak-formula-319719"
 }
 
 variable "cluster_name" {
@@ -40,12 +40,10 @@ variable "billing_account_id" {
 
 variable "k8s_version" {
   type    = string
-  default = "1.17.15-gke.800"
+  default = "1.13.6-gke.6"
 }
 
 variable "destroy" {
   type    = bool
-  default = true
+  default = false
 }
-
-

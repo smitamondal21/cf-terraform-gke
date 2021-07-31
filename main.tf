@@ -1,14 +1,15 @@
 provider "google" {
-  credentials = file("account.json")
+  #credentials = file("account.json")
+  credentials = file("teak-formula-319719-a3a2de930b88.json")
   project     = var.project_id
   region      = var.region
 }
 
 terraform {
   backend "gcs" {
-    bucket      = "doc-20200910120339"
+    bucket      = "sm-bucket-01"
     prefix      = "terraform/state"
-    credentials = "account.json"
+    credentials = "teak-formula-319719-a3a2de930b88.json"
   }
 }
 
